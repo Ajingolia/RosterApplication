@@ -1,0 +1,61 @@
+﻿@model RosterViewModel
+@using Roster.DataAccess.Models
+
+@{
+    string pageType = Model.CurrentRoster.PlayerID > 0 ? "Update Roster" : "Create Roster";
+
+    ViewData["Title"] = $"Club Sports | {pageType}";
+}
+
+<form action="~/Roster/Index" method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="display-4" style="margin: 20px 0px;">@pageType</h1>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Team Name: </label>
+                <input type="text" class="form-control" name="teamName" value="@Model.CurrentRoster.TeamName" />
+            </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>First Name: </label>
+                <input type="text" class="form-control" name="firstName" value="@Model.CurrentRoster.FirstName" />
+            </div>
+        </div>
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Last Name: </label>
+                <input type="text" class="form-control" name="lastName" value="@Model.CurrentRoster.LastName" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Age: </label>
+                <input type="number" class="form-control" name="age" value="@Model.CurrentRoster.Age" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Sport: </label>
+                <input type="text" class="form-control" name="sport" value="@Model.CurrentRoster.Sport" />
+            </div>
+        </div>
+        </div>
+            <div class="form-row">
+                <div class="col-md-3 offset-md-3 form-group">
+                    <label>Position: </label>
+                    <input type="text" class="form-control" name="position" value="@Model.CurrentRoster.Position" />
+                </div>
+            </div>
+        <div class="form-row">
+            <div id="space-buttons"class="col-md-6 offset-md-3">
+                <button type="button" class="btn btn-secondary" onclick="location.href = '/Contacts/Index'">CANCEL</button>
+                <button type="submit" class="btn btn-primary">SAVE Roster</button>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="playerID" value="@Model.CurrentRoster.PlayerID" />
+</form>
+

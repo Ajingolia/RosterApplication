@@ -1,0 +1,89 @@
+﻿@model RosterViewModel
+@using Roster.DataAccess.Models
+
+@{
+    ViewData["Title"] = "Club Sports | Rosters";
+}
+
+<script type="text/javascript">
+    function openLocation(url) {
+        window.location.href = url;
+    }
+
+    function confirmDelete(id) {
+        $("#hdnDeletePlayerID").val(id);
+        openModal("deleteModal");
+    }
+
+    function cancelDelete() {
+        $("#hdnDeletePlayerID").val(0);
+        closeModal("deleteModal");
+    }
+
+    function deleteRoster() {
+        var id = $("#hdnDeletePlayerID").val();
+        window.location.href = "/Rosters/Delete/" + id;
+    }
+</script>
+
+<input type="hidden" id="hdnDeletePlayerID" value="0" />
+
+<div class="text-center">
+    @if (!String.IsNullOrEmpty(Model.ActionMessage))
+    {
+        string colorClass = Model.IsActionSuccess ? "alert-success" : "alert-danger";
+
+        <div class="alert @colorClass alert-dismissible fade show" role="alert">
+            <strong>@Model.ActionMessage</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <h1 class="display-4">Roster</h1>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <table class="table">
+                <tr>
+                    <th>Team Name</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Sport</th>
+                    <th>Position</th>
+                    <th colspan="2"><button type="button" onclick="javascript:openLocation('/Roster/Update/0')" class="btn btn-success btn-sm">ADD NEW ROSTER</button></th>
+                </tr>
+
+                @foreach (TeamRosters roster in Model.RosterList)
+                {
+                    <tr>
+                        <td>@roster.TeamName</td>
+                        <td>@roster.FirstName</td>
+                        <td>@roster.LastName</td>
+                        <td>@roster.Age</td>
+                        <td>@roster.Sport</td>
+                        <td>@roster.Position</td>
+                        <td><button type="button" onclick="javascript:openLocation('/Roster/Update/@roster.PlayerID')" class="btn btn-secondary btn-sm">EDIT</button></td>
+                        <td><button type="button" onclick="javascript:confirmDelete(@roster.PlayerID)" class="btn btn-danger btn-sm">DELETE</button></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="deleteModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRM DELETE</h5>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this roster?</p>
+                <button type="button" onclick="javascript:cancelDelete()" class="btn btn-secondary btn-sm">CANCEL</button>
+                <button type="button" onclick="javascript:deleteRoster()" class="btn btn-danger btn-sm">DELETE</button>
+            </div>
+        </div>
+    </div>
+

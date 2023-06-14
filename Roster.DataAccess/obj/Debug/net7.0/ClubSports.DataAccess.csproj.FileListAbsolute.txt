@@ -1,0 +1,12 @@
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\ClubSports.DataAccess.deps.json
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\ClubSports.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\ClubSports.DataAccess.pdb
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.AssemblyInfo.cs
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\refint\ClubSports.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ClubSports.DataAccess.pdb
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ref\ClubSports.DataAccess.dll

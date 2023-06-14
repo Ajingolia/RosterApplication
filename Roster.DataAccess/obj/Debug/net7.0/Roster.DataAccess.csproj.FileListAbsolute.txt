@@ -1,0 +1,12 @@
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.AssemblyInfo.cs
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\Roster.DataAccess.deps.json
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\Roster.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\bin\Debug\net7.0\Roster.DataAccess.pdb
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\refint\Roster.DataAccess.dll
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\Roster.DataAccess.pdb
+C:\Users\ajing\source\repos\RosterApplication\Roster.DataAccess\obj\Debug\net7.0\ref\Roster.DataAccess.dll
