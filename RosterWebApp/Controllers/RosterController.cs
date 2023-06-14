@@ -15,8 +15,8 @@ namespace ClubSports.Controllers
      
         public IActionResult Index()
         {
-            RosterViewModel model = new RosterViewModel(_context);
-            return View(model);
+            RosterViewModel Waffles = new RosterViewModel(_context);
+            return View(Waffles);
         }
         [HttpPost]
         public IActionResult Index(int playerId, string teamName, string firstName, string lastName, int age, string sport, string position)
